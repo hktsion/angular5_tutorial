@@ -1,0 +1,43 @@
+<section>
+	<h3>{{general.titulo | uppercase}}</h3>
+	<div class="videos">
+		
+		<div class="video"  [style.opacity] = "bgcolor(videos.futuro.year)">
+			<div class="video-header">
+				<h4>{{videos.futuro.titulo | uppercase}}</h4>
+				<p class="year">{{videos.futuro.year}}</p>
+			</div>
+			<figure class="video-image" *ngIf="videos.futuro.show">
+				<img src="{{videos.futuro.img}}"  alt="{{videos.futuro.titulo}}">
+			</figure>
+			<p class="sinopsis">{{videos.futuro.sinopsis}}</p>
+			<button>VER MÁS</button>
+		</div>
+		
+		<div class="video" [style.opacity] = "bgcolor(videos.et.year)">
+			<div class="video-header">
+				<h4 [style.background] = "bgcolor(videos.et.year)">{{videos.et.titulo | uppercase}}</h4>
+				<p class="year">{{videos.et.year}}</p>
+			</div>
+			<figure class="video-image" *ngIf="videos.et.show">
+				<img src="{{videos.et.img}}" alt="{{videos.et.titulo}}">
+			</figure>
+			<p class="sinopsis">{{videos.et.sinopsis}}</p>
+			<button>VER MÁS</button>
+		</div>
+
+		<div class="video" [style.opacity] = "bgcolor(videos.goonies.year)">
+			<div class="video-header">
+				<h4 [style.background] = "bgcolor(videos.goonies)">{{videos.goonies.titulo | uppercase}}</h4>
+				<p class="year">{{videos.goonies.year}}</p>
+			</div>
+			<figure class="video-image" *ngIf="videos.goonies.show">
+				<img src="{{videos.goonies.img}}"  alt="{{videos.goonies.titulo}}">
+			</figure>
+			<p class="sinopsis">{{videos.goonies.sinopsis}}</p>
+			<button>VER MÁS</button>
+		</div>
+
+
+	</div>
+</section>

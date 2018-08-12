@@ -1,0 +1,12 @@
+*{margin:0; padding: 0px;}
+figure{ width: 100%; }
+img{width: 100%; vertical-align: center;}
+.videos{display: flex;flex-direction: row;justify-content: space-between;align-items: flex-start;flex-wrap: wrap;overflow-x: hidden;width: 100%;margin: 20px auto;}
+.videos .video{box-sizing: border-box;display: flex;flex-direction: column;margin: 0px .11%;border: 1px solid #212121;padding: 20px;width: 33%;}
+.videos .video h4{ margin: 10px 0px 5px 0px; padding: 10px; }
+.videos .video p.year{margin: 0px;}
+.video-image{margin: 15px auto;}
+p.sinopsis{ font-size: 12px; margin: 15px auto; text-align: justify; min-height: 200px; }
+button{	width: 62%;	margin: 0 auto;	background: teal;	border: 2px solid teal;	padding: 10px;	color: #ffffff;	font-weight: bold;	transition: all 300ms ease-in-out}
+button:hover{background: lightblue;	border: 2px solid lightblue;cursor:pointer;}
+.year{ font-size: 10px; font-weight: bold }
