@@ -8,14 +8,14 @@ import { Component } from '@angular/core';
 
 
 export class AppComponent {
-	public titulo:string = '';
-	public componente:object<string> = {};
+	
+	public titulo:string;
+	public componente:object;
 
 	constructor(){
 		this.titulo = 'Componentes en Angular';
 		this.componente = {
 			'titulo': 'CREACIÓN DE COMPONENTES',
-			'descripcion': 'Es recomendable tener un directorio para los componentes.'
+			'descripcion': 'Es recomendable tener un directorio para los componentes.'}
 		}
-	};
-}
+	}
