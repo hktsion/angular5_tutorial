@@ -1,3 +1,8 @@
 ### DIRECTIVAS *ngIf ###
 
+Las directivas son instrucciones aplicables al DOM en las lantillas del componente. 
+Podemos usar ngIf cuando queremos mostrar o no un div, dar un estilo u otro a un elemento o modificar valores del componente desde la vista.
+
+En el ejemplo, coloreamos el títulod de la película si el año es menor a 1982.
+
 
