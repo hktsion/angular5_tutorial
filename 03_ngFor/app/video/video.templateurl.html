@@ -1,0 +1,18 @@
+<section>
+	<h3>{{general.titulo | uppercase}}</h3>
+	<div class="videos">
+		
+		<div class="video" *ngFor="let vid of videos; let i = index">
+			<div class="video-header">
+				<h4 >{{vid.titulo | uppercase}}</h4>
+				<p class="year">{{vid.year}}</p>
+			</div>
+			<figure class="video-image">
+				<img src="{{vid.img}}"  alt="{{vid.titulo}}">
+			</figure>
+			<p class="sinopsis">{{vid.sinopsis}}</p>
+			<button>{{buttons_txt[i]}}</button>
+		</div>
+
+	</div>
+</section>
