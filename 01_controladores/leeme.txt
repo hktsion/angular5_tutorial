@@ -1,0 +1,11 @@
+### COMPONENTES ###
+
+Dentro de Angular, todo son componentes. 
+
+Un componente es un pequeño trozo de código que controla una parte de la web (renderiza y controla un trozo de pantalla).
+
+Los componentes tienen una vista asociada.
+
+Un componente da soporte a una vista y es un intermediario entre la lógica y la vista.
+
+Un COMPONENTE es al uso, un CONTROLADOR.
