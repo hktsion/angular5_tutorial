@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
 	public titulo:string = '';
-	public componente = {};
+	public componente:object<string> = {};
 
 	constructor(){
 		this.titulo = 'Componentes en Angular';

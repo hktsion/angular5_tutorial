@@ -10,10 +10,11 @@ import {Component} from '@angular/core'; //objeto para generar componentes
 export class VideoComponent{
 
 	//tipado de objetos
-	public general:object = {};
+	public general:object<string> = {};
 	public menor_1985:string = '';
-	public buttons_txt:Array<string> = new Array();
-	public videos:Array<object> = [];
+	
+	public buttons_txt:Array<any> = new Array();
+	public videos:Array<any> = [];
 
 	constructor(){
 		this.general = { 'titulo' : 'Creación de componentes'};

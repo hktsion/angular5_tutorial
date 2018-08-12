@@ -10,7 +10,7 @@ import {Component} from '@angular/core';
 
 
 export class ExplicacionComponent{
-	public explicacion:Object = {};
+	public explicacion:object<string> = {};
 
 	constructor(){
 		this.explicacion = {
