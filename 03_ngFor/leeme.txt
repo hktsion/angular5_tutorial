@@ -1,0 +1,6 @@
+### DIRECTIVAS *ngFor ###
+
+Las directivas son instrucciones aplicables al DOM en las lantillas del componente. 
+Podemos usar ngFor para mostrar un array de elementos
+
+
