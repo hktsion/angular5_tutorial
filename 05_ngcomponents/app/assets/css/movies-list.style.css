@@ -1,0 +1,112 @@
+h3{color: #00a98f;}
+h4{
+	text-align: center;
+	box-sizing: border-box;
+	margin: 10px auto;
+	font-weight: 600; 
+	font-size:24px; 
+	color: #00a98f;
+	text-shadow: 0px 0px 7px rgba(96,255,115,0.4);
+}
+h5{text-align: left;}
+ul{list-style-type: none; width: 80%; margin: 0 auto;}
+ul li{text-align: left; font-size: 14px; line-height: 16px;}
+.movies-grid{
+	white-space: nowrap;
+	position: relative;
+	width: 90%;
+	margin: 20px auto;
+	padding: 30px; 
+	background: rgba(0,0,0,0.3);
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.inner-movie{ 
+	display: inline-block;
+	width: 33%;
+	margin: .11%;
+	padding: 15px;
+	background: rgba(0,0,0,.1);
+	box-sizing: border-box;
+	z-index: 1;
+	transform: scale(1,1);
+	border: 2px solid rgba(0,0,0,0.1);
+	transition: all 120ms ease-in-out;
+}
+.inner-movie figure img{transition: all 420ms ease-in-out; transform-origin: 50% 50%;}
+.inner-movie figure{ 
+	max-width: 330px;
+	max-height: 220px;
+	webkit-filter: grayscale(35%);
+	filter: grayscale(35%); 
+	max-width:100%; 
+	transition: all 300ms ease-in-out; 
+	overflow:hidden;
+}
+.inner-movie:hover figure{  webkit-filter: grayscale(0%);filter: grayscale(0%); }
+.inner-movie:hover figure img{ transform: scale(1.1,1.1)}
+.inner-movie:hover{
+	/*border: 2px solid rgba(255,255,255,0.4);*/
+	/*background: rgba(25,25,25,1);*/
+	box-shadow: 3px 15px 35px rgba(0,0,0,.6);
+	z-index: 2;
+}
+.inner-movie .content p{
+	font-size: 14px;
+	text-align: justify;
+	line-height: 18px;
+	width: 100%;
+	white-space: initial;
+}
+.content{
+	width: 100%; 
+	box-sizing: border-box;
+}
+.content .description{min-height: 60px;}
+.ficha-tecnica{
+	display:flex; 
+	flex-direction:column; 
+	min-height: 125px;
+	justify-content: center;
+}
+.content span{font-weight: 600;}
+.content p.cast{text-align: left;}
+figure{ width: 100%; }
+img{ width: 100%; height: 100%;vertical-align: center; }
+button{   
+	margin: 10px 0px;
+	box-sizing: border-box;
+	padding: 10px;
+	width: 100%;
+	background: rgba(0,169,143,.1);
+	border: 2px solid #00a98f;
+	color: #f3f3f3;
+	font-weight: bold;
+	font-family: 'News Cycle', sans-serif;
+	transition: all 350ms ease-in-out;
+}
+button:hover{background: #00a98f; cursor:pointer;}
+
+/*slider----------------------------------------*/
+#pre,#next{
+	z-index: 3;
+	position: absolute;
+	top:0px;
+	background: rgba(0,0,0,1); 
+	width: 40px; 
+	height: calc(100%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 240ms ease-in-out;
+}
+#pre:hover,#next:hover{ background: rgba(0,0,0,0.9);  width: 120px; }
+#pre  figure,#next figure{ width:35px; opacity: 0.4; transition: all 240ms ease-in-out;}
+#pre:hover figure,#next:hover figure{cursor: pointer; opacity: 1}
+#pre{left: 0%;}
+#next{right: 0%;}
+
+/*estilos Angular -------------------------------*/
+.movieSelectedClass{
+	background: #363636;
+}

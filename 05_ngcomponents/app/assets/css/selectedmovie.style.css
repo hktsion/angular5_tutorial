@@ -1,0 +1,31 @@
+.movies-grid{
+	white-space: nowrap;
+	position: relative;
+	width: 90%;
+	margin: 20px auto;
+	padding: 30px; 
+	background: rgba(0,0,0,0.3);
+	box-sizing: border-box;
+	overflow: hidden;
+	/*display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;*/
+}
+
+.movies-grid .sel-movie{
+	display: flex;
+	padding: 0px 20px;
+	box-sizing: border-box;
+}
+
+.movies-grid .sel-movie .content{
+	padding: 20px;
+	box-sizing: border-box;
+}
+.movies-grid .sel-movie .content p{
+	font-size: 14px;
+	line-height: 16px;
+	width: 100%;
+	white-space: initial;
+}

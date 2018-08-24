@@ -1,0 +1,21 @@
+div.footer{ 
+	font-family: 'News Cycle', sans-serif; 
+	width: 100%; 
+}
+div.footer .wrapper{ 
+	padding: 12px;
+	box-sizing: border-box;
+	display: flex; 
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+div.footer .wrapper .content{ 
+	width: 33.33%;
+	text-align: center;
+}
+div.footer .wrapper .content.rrss{ 
+	display: flex;
+	justify-content: center;
+}
+div.footer .wrapper .content.rrss figure{ margin: 0px 10px; }
