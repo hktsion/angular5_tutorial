@@ -1,0 +1,58 @@
+<h3>{{title}}</h3>
+<div class="wrapper">
+	
+	<div class="movies-grid" >
+		<div id="pre"><figure><img src="src/app/assets/img/pre.png" alt="pre"></figure></div>
+		<div class="inner-movie" *ngFor="let movie of movies" (click)="onChangeSelectedMovie(movie)" data-id="{{movie.id}}" [class.movieSelectedClass]="movie.id == mouseentermovie.id">
+			<div class="movie" >
+				<figure>
+					<img src="src/app/assets/img/{{movie.imgsrc}}" alt="{{movie.title}}">
+				</figure>
+				<div class="content">
+					<h4>{{movie.title | uppercase}}</h4>
+					<p class="description">{{movie.description}}</p>
+				</div>
+				<div class="content ficha-tecnica">
+					<p><span>Director: </span> <ng-container>{{movie.director}}</ng-container></p>
+					<p><span *ngIf="movie.music[0].author!=''">Música por:</span> {{movie.music[0].author}}</p>
+					<p><span *ngIf="movie.music[0].theme!=''">Tema principal:</span> {{movie.music[0].theme}}</p>
+					<p><span>Duración:</span> {{movie.duration}} min.</p>
+					<p class="cast"><span>Reparto: </span><ng-container *ngFor="let cast of movie.cast">{{cast}}, </ng-container></p>
+				</div>
+				<div class="content">
+					<button>VER ONLINE</button>
+				</div>
+			</div>
+		</div>
+		<div id="next"><figure><img src="src/app/assets/img/next.png" alt="next"></figure></div>
+
+		<!-- Inicio de pelicula favorita -->
+		<br><br>
+		<div style="max-width: 500px; margin: 0 auto">
+			<h2>{{mouseentermovie.title}}</h2>
+			<div class="sel-movie">
+				<div class="content ficha-tecnica">
+					<h4 style="text-align: left; margin:0px">Director: <ng-container *ngFor="let dir of mouseentermovie.director">{{dir}}, </ng-container></h4>
+					<h4 style="text-align: left; margin:0px">Música por: {{mouseentermovie.music[0].author}}</h4>
+					<h4 style="text-align: left; margin:0px">Tema principal: {{mouseentermovie.music[0].theme}}</h4>
+					<h4 style="text-align: left; margin:0px">Duración: {{mouseentermovie.duration}} min.</h4>
+				</div>
+			</div>
+		</div>
+		<!-- fin de pelicula favorita -->
+
+
+	</div>	
+</div>
+
+
+
+<!-- <div class="pruebas">
+	<p>Hola
+		{{movies[0].title}}
+	</p>
+	<p>
+		Cambiar titulo
+		<input [(ngModel)]="movies[0].title">
+	</p>
+</div> -->
